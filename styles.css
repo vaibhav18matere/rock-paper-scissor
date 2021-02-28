@@ -50,8 +50,37 @@ header h1{
     position: absolute;
     top: 45px;;
     right: -30px;
+    /* width: 30%; */
 }
 
-#user-score{
+.score{
     align-content: center;
+    margin-top: 30px;
+}
+
+.result{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.choice{
+    margin: 10px;
+    
+}
+
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 15px 15px;
+}
+
+.choices{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
