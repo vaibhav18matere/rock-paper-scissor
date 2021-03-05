@@ -84,3 +84,10 @@ img{
     align-items: center;
     justify-content: center;
 }
+
+#action-msg{
+    color: tomato;
+    text-align: center;
+    font-weight: bolder;
+    
+}
