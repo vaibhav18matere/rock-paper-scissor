@@ -20,20 +20,34 @@ function getComputerChoice(){
     const randomNumber=Math.floor(Math.random()*3);
     return choices[randomNumber];
 }
-//5. fetch result statement
+//6. making meaningful result statement
+    function convertToWord(letter){
+        if(letter==="r") return "Rock" ;
+        if (letter==="p")return "Paper" ;
+        return "Scissor"
+    }
+
+
+//5. increasing scores  
+//7. fetching result statements
 function win (userChoice,computerChoice){
     userScore++;
     userScore_span.innerHTML=userScore;
     computerScore_span.innerHTML=computerScore;
-    result_p.innerHTML=userChoice+" beats "+computerChoice+" you win!";
+    result_p.innerHTML=`${convertToWord (userChoice)} beats  ${convertToWord (computerChoice)} , you win !!`;
 }
 
-function lose (){
-    console.log("lose");
+function lose (userChoice,computerChoice){
+    computerScore++;
+    userScore_span.innerHTML=userScore;
+    computerScore_span.innerHTML=computerScore;
+    result_p.innerHTML=`${convertToWord (userChoice)} beats  ${convertToWord (computerChoice)} , you lost !!`;
 }
 
-function draw (){
-    console.log("draw");
+function draw (userChoice,computerChoice){
+    userScore_span.innerHTML=userScore;
+    computerScore_span.innerHTML=computerScore;
+    result_p.innerHTML=`${convertToWord (userChoice)} =  ${convertToWord (computerChoice)} , its Draw !!`;
 }
 
 
