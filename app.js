@@ -25,8 +25,26 @@ console.log(getComputerChoice);
 //making a game function to feth both scores
 function game (userChoice){
     const computerChoice=getComputerChoice();
-console.log("computerChoice is :"+ computerChoice);
-console.log("userChoice is :"+ userChoice);
+
+    switch (userChoice+computerChoice) {
+
+        case "rs":
+        case "pr":
+        case "sp":
+            console.log("you win")  
+            break;
+        case "sr":
+        case "rp":
+        case "ps":
+            console.log("you lost")
+            break;
+        case "rr":
+        case "pp":
+        case "ss":
+            console.log("Its a Draw !!!")
+            break;
+    }
+
 }
 
 //adding click event listener
