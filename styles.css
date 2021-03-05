@@ -89,5 +89,19 @@ img{
     color: tomato;
     text-align: center;
     font-weight: bolder;
-    
+}
+
+.green-glow{
+    border: 4px solid rgb(151, 233, 27);
+    box-shadow: 0 0 10px rgb(7, 247, 7);
+}
+
+.red-glow{
+    border: 4px solid rgb(228, 16, 16);
+    box-shadow: 0 0 10px rgb(172, 77, 22);
+}
+
+.white-glow{
+    border:4ps solid white;
+    box-shadow: 0 0 10px cornsilk;
 }

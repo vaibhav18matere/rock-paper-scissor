@@ -35,19 +35,41 @@ function win (userChoice,computerChoice){
     userScore_span.innerHTML=userScore;
     computerScore_span.innerHTML=computerScore;
     result_p.innerHTML=`${convertToWord (userChoice)} beats  ${convertToWord (computerChoice)} , you win !!`;
+    
+    //8. 
+    document.getElementById(userChoice).classList.add('green-glow');
+
+    //9.
+    setTimeout(function(){
+    document.getElementById(userChoice).classList.remove('green-glow')
+    },400);
 }
+
 
 function lose (userChoice,computerChoice){
     computerScore++;
     userScore_span.innerHTML=userScore;
     computerScore_span.innerHTML=computerScore;
-    result_p.innerHTML=`${convertToWord (userChoice)} beats  ${convertToWord (computerChoice)} , you lost !!`;
+    result_p.innerHTML=`${convertToWord (userChoice)} looses to  ${convertToWord (computerChoice)} , you lost !!`;
+
+    document.getElementById(userChoice).classList.add('red-glow');
+
+    
+    setTimeout(function(){
+        document.getElementById(userChoice).classList.remove('red-glow')
+        },400);
 }
 
 function draw (userChoice,computerChoice){
     userScore_span.innerHTML=userScore;
     computerScore_span.innerHTML=computerScore;
     result_p.innerHTML=`${convertToWord (userChoice)} =  ${convertToWord (computerChoice)} , its Draw !!`;
+    document.getElementById(userChoice).classList.add('white-glow');
+
+    
+    setTimeout(function(){
+        document.getElementById(userChoice).classList.remove('white-glow')
+        },400);
 }
 
 
