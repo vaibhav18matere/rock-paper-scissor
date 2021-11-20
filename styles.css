@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,600;1,700&display=swap');
 
+:root{
+    --primary-color : #1c04f5;
+    --secondary-color:#f30d0d;
+}
+
 body {
     background-color: #24272E ;
     font-family: Asap, sans-serif ;
@@ -17,7 +22,7 @@ header {
 }
 
 header h1{
-    color: tomato;
+    color: var(--primary-color);
     text-align: center;
 }
 
@@ -35,7 +40,7 @@ header h1{
 }
 
 .badge{
-    background-color: tomato;
+    background-color: var(--secondary-color);
     font-size: 15px;
     padding: 2px 10px;
 }
